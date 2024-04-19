@@ -19,10 +19,10 @@ services:
     mysql:
         image: mysql:8.0.26
         environment:
-            - MYSQL_DATABASE=${DB_DATABASE:-fullstack_gyminn}
-            - MYSQL_USER=${DB_USERNAME:-jony_task}
-            - MYSQL_PASSWORD=${DB_PASSWORD:-passjonytask}
-            - MYSQL_ROOT_PASSWORD=${DB_PASSWORD:-root}
+            - MYSQL_DATABASE=fullstack_gyminn
+            - MYSQL_USER=jonytask
+            - MYSQL_PASSWORD=passjonytask
+            - MYSQL_ROOT_PASSWORD=root
         command:
             mysqld --default-authentication-plugin=mysql_native_password
         volumes:
