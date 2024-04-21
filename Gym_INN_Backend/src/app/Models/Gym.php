@@ -8,4 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class Gym extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'prefecture_id',
+        'name',
+        'area',
+        'address'
+    ];
 }
