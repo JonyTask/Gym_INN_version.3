@@ -15,7 +15,6 @@ return new class extends Migration
             $table->id();
             $table->foreignUuid('following_id')->constrained('users')->cascadeOnDelete();
             $table->foreignUuid('followed_id')->constrained('users')->cascadeOnDelete();
-            $table->text('message');
             $table->timestamps();
             $table->softDeletes();
         });
