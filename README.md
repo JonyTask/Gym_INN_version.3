@@ -2,7 +2,7 @@
 トレーニー用のアプリケーション
 
 ## 使用技術
-バックエンド：Laravel 11.0
+バックエンド：Laravel 11.0   
 フロントエンド：Vue.js 3.4.21
 
 Docker Compose
