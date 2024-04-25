@@ -16,7 +16,7 @@ return new class extends Migration
             $table->foreignUuid('user_id')->constrained('users')->cascadeOnUpdate()->cascadeOnDelete();
             $table->foreignId('gym_id')->constrained('gyms')->cascadeOnUpdate()->cascadeOnDelete();
             $table->string('display_name');
-            $table->string('image_path');
+            $table->string('image_path')->nullable();
             $table->integer('age');
             $table->string('occupation');
             $table->text('description');
